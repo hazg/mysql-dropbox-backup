@@ -1,4 +1,6 @@
 #!/bin/bash
+# Aleksander Aleksandrov hazg@mail.ru
+# https://github.com/hazg/mysql-dropbox-backup
 
 backup_path="backups"   # Dropbox path
 user="root"             # Mysql user
