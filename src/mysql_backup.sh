@@ -13,7 +13,8 @@ for dbname in `echo show databases| mysql -u $user`; do
     mysqldump -u $user $dbname > "/tmp/mysql_backup/$dbname.sql"
   fi;
 done;
-day='date +"%u"'
+
+day=$(date +'%u')
 filename="mysql-$day"
 
 tar -cf "/tmp/$filename.tar" /tmp/mysql_backup
